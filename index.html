@@ -395,14 +395,6 @@
   width: 100%;
   height: 100%;
 }
-
-.avatar-bg img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;            /* 🔥 fills entire circle */
-  object-position: center 25%;  /* 🔥 move focus to face */
-  transform: scale(1.4);        /* 🔥 zoom in */
-}
   .couple-name {
     font-family: 'Cinzel Decorative', serif;
     font-size: clamp(1.3rem, 2.5vw, 1.8rem);
@@ -1032,7 +1024,11 @@
       <!-- Bride -->
       <div class="couple-card" id="brideCard">
         <div class="couple-avatar">
-          <div class="avatar-bg" style="background:linear-gradient(135deg,#fce4ec,#f8bbd0)"><img src="Bhakti.jpeg" alt="" srcset=""></div>
+          <div class="avatar-bg" style="background:linear-gradient(135deg,#fce4ec,#f8bbd0)"><img src="Bhakti.jpeg" alt="" srcset="" style="  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1);
+          "></div>
         </div>
         <div class="couple-name">Bhakti Govari</div>
         <div class="couple-name-dev">भक्ति गोवारी</div>
@@ -1046,14 +1042,15 @@
       <div class="couple-card" id="groomCard" style="transition-delay:0.2s">
         <div class="couple-avatar">
           <div class="avatar-bg" style="background:linear-gradient(135deg,#fff8e1,#ffe082)"><img src="Ram.jpeg" alt="" srcset="" style="
-            width:100%;
-            height:100%;
-            object-fit:cover;
-            transform: scale(1.65) translateY(20%);
+            width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: center top;
+transform: scale(1.2);
           "></div>
         </div>
         <div class="couple-name">Ram Pragallapati</div>
-        <div class="couple-name-dev">राम प्रगल्लपती</div>
+        <div class="couple-name-dev">राम प्रगल्लपाटी</div>
         <div class="couple-parents">
           Son of<br>
           <strong>Shri Rama Krishna Pragallapati</strong> &amp; <strong>Smt. Anuradha Pragallapati</strong><br>
@@ -1130,6 +1127,34 @@
   <p class="section-verse reveal" style="margin-bottom:3rem">Every ritual, a prayer. Every ceremony, a memory woven into the fabric of forever.</p>
 
   <div class="events-grid">
+<!-- Mehendi -->
+    <div class="event-card mehendi reveal reveal-delay-2">
+      <div class="event-header">
+        <span class="event-icon">🌿</span>
+        <div class="event-name">Mehendi Night</div>
+        <span class="event-name-dev">मेहंदी</span>
+      </div>
+      <div class="event-strip"></div>
+      <div class="event-body">
+        <div class="event-detail">
+          <span class="event-detail-icon">📅</span>
+          <span>25th April, 2026</span>
+        </div>
+        <div class="event-detail">
+          <span class="event-detail-icon">📍</span>
+          <span>Borivli</span>
+        </div>
+        <div class="event-detail">
+          <span class="event-detail-icon">✨</span>
+          <span>An evening of henna art, music, and the bridal glow</span>
+        </div>
+        <div class="event-detail">
+          <span class="event-detail-icon">🪷</span>
+          <span>Green Color Theme</span>
+        </div>
+      </div>
+    </div>
+
     <!-- Haldi -->
     <div class="event-card haldi reveal reveal-delay-1">
       <div class="event-header">
@@ -1145,38 +1170,20 @@
         </div>
         <div class="event-detail">
           <span class="event-detail-icon">📍</span>
-          <span>Nature Breez Farm And Cafe, Virar</span>
+          <span>Nature Breez Farm and Cafe, Virar</span>
         </div>
         <div class="event-detail">
           <span class="event-detail-icon">✨</span>
           <span>Sacred turmeric blessings for radiance and auspicious beginnings</span>
         </div>
+        <div class="event-detail">
+          <span class="event-detail-icon">🌸</span>
+          <span>Carnival Theme</span>
+        </div>
       </div>
     </div>
 
-    <!-- Mehendi -->
-    <div class="event-card mehendi reveal reveal-delay-2">
-      <div class="event-header">
-        <span class="event-icon">🌿</span>
-        <div class="event-name">Mehendi Night</div>
-        <span class="event-name-dev">मेहंदी</span>
-      </div>
-      <div class="event-strip"></div>
-      <div class="event-body">
-        <div class="event-detail">
-          <span class="event-detail-icon">📅</span>
-          <span>25th April, 2026</span>
-        </div>
-        <div class="event-detail">
-          <span class="event-detail-icon">📍</span>
-          <span>Boriwali</span>
-        </div>
-        <div class="event-detail">
-          <span class="event-detail-icon">✨</span>
-          <span>An evening of henna art, music, and the bridal glow</span>
-        </div>
-      </div>
-    </div>
+    
 
     <!-- Wedding -->
     <div class="event-card ceremony reveal reveal-delay-3">
@@ -1193,11 +1200,15 @@
         </div>
         <div class="event-detail">
           <span class="event-detail-icon">📍</span>
-          <span>Nature Breez Farm And Cafe,Virar</span>
+          <span>Nature Breez Farm and Cafe,Virar</span>
         </div>
         <div class="event-detail">
           <span class="event-detail-icon">✨</span>
           <span>Seven sacred vows, the sacred fire, and eternal union</span>
+        </div>
+          <div class="event-detail">
+          <span class="event-detail-icon">🍹</span>
+          <span>Cocktail Theme</span>
         </div>
       </div>
     </div>
@@ -1222,6 +1233,10 @@
         <div class="event-detail">
           <span class="event-detail-icon">✨</span>
           <span>An evening of celebration, blessings, music and dance</span>
+        </div>
+          <div class="event-detail">
+          <span class="event-detail-icon">🧥</span>
+          <span>South Indian Theme</span>
         </div>
       </div>
     </div>
